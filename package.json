@@ -9,7 +9,7 @@
     "test-watch": "nodemon --exec npm test"
   },
   "engines": {
-    "node": "6.2.2"
+    "node": "10.1.0"
   },
   "author": "",
   "license": "ISC",
@@ -18,11 +18,12 @@
     "expect": "^1.20.2",
     "express": "^4.16.4",
     "lodash": "^4.17.11",
-    "mocha": "^3.0.2",
+    "mocha": "^5.2.0",
     "mongodb": "^3.1.10",
     "mongoose": "^5.3.14",
+    "node": "^11.3.0",
     "nodemon": "^1.10.2",
-    "supertest": "^2.0.0"
+    "supertest": "^3.3.0"
   },
   "devDependencies": {}
 }
