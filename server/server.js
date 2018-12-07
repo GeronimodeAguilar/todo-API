@@ -93,9 +93,19 @@ Todo.findByIdAndUpdate(id, {$set: body}, {new: true}).then((todo) => {
   res.send({todo});
 }).catch((e) =>{ 
   res.status(400).send();
-});
-
+  });
 });  
+
+app.post('/users', (req, res) => {
+  var body = _.pick(req.body, ['email', 'password']);
+  var user = new User(body);
+
+  user.save().then((user) => {
+    res.send(user);
+  }).catch((e) => {
+    res.status(400).send(e);
+  })
+});
 
 app.listen(port, () => {
   console.log(`Started on ${port} 3000`);
