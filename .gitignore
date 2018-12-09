@@ -1,2 +1,3 @@
 node_modules/
 server/noserver.js
+server/config/config.json
